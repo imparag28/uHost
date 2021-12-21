@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+    margin: 0;
+    
+}
+.backdrop{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 10vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+.main-header {
+    width: 100%;
+    position: fixed;
+    background-color: #2ddf5c;
+    padding: 8px 16px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  
+   }
+   .main-header > div {
+   
+       display: inline-block;
+       vertical-align: middle;
+   }
+   .main-header_brand{
+       color: #0c4f1f;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      height: 23px; 
+      display: inline-block;
+   }
+   .main-header_brand img {
+       height: 100%;
+       width: 100%;
+   }
+   .main-nav{
+      display: inline-block; 
+      text-align:right;
+      width: calc(100% - 75px);
+      vertical-align: middle;
+   }
+   .main-nav_items{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+   .main-nav_item{
+      display: inline-block; 
+      margin: 0 10px;
+      text-decoration: none;
+     
+      
+   }
+   .main-nav_item a{
+   text-decoration: none;
+   color: #0c4f1f;
+   font-weight: bold;
+   padding:3px 0;
+   
+   
+   }
+   .main-nav_item a:hover,
+   .main-nav_item a:active{
+       color: white;
+       border-bottom:5px solid white;
+   }
+   .main-nav_item--cta a{
+    color:white;
+    padding: 8px 16px;
+    background-color:#ff1b68;
+    border-radius: 8px;
+   }
+   .main-nav_item--cta a:hover,
+   .main-nav_item--cta a:active{
+       color:#ff1b68;
+       background-color: white;
+       border: none;
+   
+   }
+   .main-footer{
+       background: black;
+       color: white;
+       padding: 48px;
+       margin-top: 48px;
+   }
+   .main-footer__links{
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       text-align: center;
+   
+   }
+   .main-footer__link{
+       display: inline-block;
+       margin: 0 16px;
+       text-decoration: none;
+   
+   }
+   .main-footer__link a:hover,
+   .main-footer__link a:active {
+       color: #ccc;
+   }
+   .button{
+    background: #2ddf5c;
+    color: white;
+    font: inherit;
+    border: 1.5px solid green;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover,
+.button:active{
+ color: #2ddf2d;
+ background: white;
+}
